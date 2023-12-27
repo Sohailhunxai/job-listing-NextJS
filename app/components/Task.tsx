@@ -1,7 +1,17 @@
-import React from 'react';
+import { ITask } from '@/types/task';
 
-const Task = () => {
-  return <div>Task</div>;
+interface Taskprops {
+  task: ITask;
+}
+
+const Task: React.FC<Taskprops> = ({ task }) => {
+  return (
+    <tr key={task.id} className="hover">
+      <th>{task.id}</th>
+      <td>{task.text}</td>
+      <td>blue</td>
+    </tr>
+  );
 };
 
 export default Task;
