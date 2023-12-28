@@ -12,11 +12,11 @@ const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
         {/* head */}
         <thead>
           <tr>
-            <th></th>
             <th>Name</th>
             <th>Job Title</th>
             <th>Skills</th>
             <th>Criteria</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
