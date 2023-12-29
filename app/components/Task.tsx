@@ -53,20 +53,20 @@ const Task: React.FC<Taskprops> = ({ task }) => {
         />
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit}>
           <form onSubmit={handleSubmitEditTodo}>
-            <h3 className="font-bold text-lg">Edit Info</h3>
+            <h3 className="font-bold text-lg text-center">Edit Info</h3>
             <div className="modal-action flex flex-col">
               <input
                 type="text"
                 value={taskToEdit}
                 onChange={(e) => setTaskToEdit(e.target.value)}
-                placeholder="Type here"
+                placeholder="name"
                 className="input input-bordered w-full max-w-full m-2"
               />
               <input
                 type="text"
                 value={jobTitleToEdit}
                 onChange={(e) => setJobTitleToEdit(e.target.value)}
-                placeholder="Type here"
+                placeholder="job title"
                 className="input input-bordered w-full max-w-full m-2"
               />
 
@@ -74,7 +74,7 @@ const Task: React.FC<Taskprops> = ({ task }) => {
                 type="text"
                 value={skillsToEdit}
                 onChange={(e) => setSkillsToEdit(e.target.value)}
-                placeholder="Type here"
+                placeholder="skills"
                 className="input input-bordered w-full max-w-full m-2"
               />
 
@@ -82,7 +82,7 @@ const Task: React.FC<Taskprops> = ({ task }) => {
                 type="text"
                 value={criteriaToEdit}
                 onChange={(e) => setCriteriaToEdit(e.target.value)}
-                placeholder="Type here"
+                placeholder="criteria"
                 className="input input-bordered w-full max-w-full m-2"
               />
 
@@ -99,9 +99,11 @@ const Task: React.FC<Taskprops> = ({ task }) => {
           size={19}
         />
         <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
-          <h3 className="text-m">Are you sure you want to delete this user?</h3>
+          <h3 className="text-m font-bold ">
+            Are you sure you want to delete this user?
+          </h3>
           <div className="modal-action">
-            <button onClick={() => handleDeleteTask(task.id)} className="btn">
+            <button onClick={() => handleDeleteTask(task.id)} className="btn ">
               Yes
             </button>
           </div>

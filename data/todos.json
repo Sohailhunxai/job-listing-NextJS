@@ -1,11 +1,25 @@
 {
   "tasks": [
     {
-      "id": "612ead0b-999d-4aec-934b-3ac8aa137bfe",
-      "text": "Sohail Abbas",
-      "jobtitle": "Front-End Developer",
+      "id": "3f48a2ca-87b0-4614-8ff0-b5d9b71f5b77",
+      "text": "Sohail Abbas ",
+      "jobtitle": "Front End-Dev",
+      "skills": "React, NextJS, ",
+      "criteria": "6 Months Of Continous Learning"
+    },
+    {
+      "id": "c3522028-b349-4366-b41a-375b77e7c25f",
+      "text": "Qamar Abbas",
+      "jobtitle": "Front-End Dev",
       "skills": "React,Next.JS",
-      "criteria": "Dont 9"
+      "criteria": "6 months of continous learning!"
+    },
+    {
+      "id": "33f28204-b78a-4fd0-9a1f-47c9c5933300",
+      "text": "Ejaz Alam ",
+      "jobtitle": "Front-End Dev",
+      "skills": "React,Next.JS",
+      "criteria": "6 months of continous learning!"
     }
   ]
 }
