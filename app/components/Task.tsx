@@ -99,11 +99,16 @@ const Task: React.FC<Taskprops> = ({ task }) => {
           size={19}
         />
         <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
-          <h3 className="text-m font-bold ">
-            Are you sure you want to delete this user?
-          </h3>
+          <h3 className="text-m font-bold ">Are you absolutey sure ?</h3>
+          <p className="mt-2 text-gray-500">
+            This action cannot be undone. This Will permanently delete and
+            remove the user data from our server.
+          </p>
           <div className="modal-action">
-            <button onClick={() => handleDeleteTask(task.id)} className="btn ">
+            <button
+              onClick={() => handleDeleteTask(task.id)}
+              className="btn glass font-bold mt-[-15px] "
+            >
               Yes
             </button>
           </div>

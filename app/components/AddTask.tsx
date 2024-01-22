@@ -11,7 +11,6 @@ const AddTask = () => {
   const router = useRouter();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [newTaskvalue, setNewTaskValue] = useState<string>('');
-  const [name, setName] = useState<string>('');
   const [jobTitle, setJobTitle] = useState<string>('');
   const [Skills, setSkills] = useState<string>('');
   const [Criteria, setCriteria] = useState<string>('');

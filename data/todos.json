@@ -5,21 +5,35 @@
       "text": "Sohail Abbas ",
       "jobtitle": "Front End-Dev",
       "skills": "React, NextJS, ",
-      "criteria": "6 Months Of Continous Learning"
+      "criteria": "6 Months Of Continous Learning (Intern)"
     },
     {
       "id": "c3522028-b349-4366-b41a-375b77e7c25f",
       "text": "Qamar Abbas",
       "jobtitle": "Front-End Dev",
       "skills": "React,Next.JS",
-      "criteria": "6 months of continous learning!"
+      "criteria": "6 months of continous learning! (Intern)"
     },
     {
       "id": "33f28204-b78a-4fd0-9a1f-47c9c5933300",
       "text": "Ejaz Alam ",
       "jobtitle": "Front-End Dev",
       "skills": "React,Next.JS",
-      "criteria": "6 months of continous learning!"
+      "criteria": "6 months of continous learning! (Intern)"
+    },
+    {
+      "id": "c62b65c5-db9d-473f-8cc3-2a1f741e9f1f",
+      "text": "Awaiz Karim",
+      "jobtitle": "Front-End Dev",
+      "skills": "Sevelte,Tailwind Css ",
+      "criteria": "6 months of continous learning"
+    },
+    {
+      "id": "0451e0d4-b953-4360-aa89-ca3e1e7c26a9",
+      "text": "Ilyas Karim",
+      "jobtitle": "Full Stack Developer",
+      "skills": "To Be Honest He knows everything...",
+      "criteria": "7 years of Expriences.."
     }
   ]
 }
