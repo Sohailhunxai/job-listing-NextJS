@@ -14,6 +14,8 @@ const AddTask = () => {
   const [jobTitle, setJobTitle] = useState<string>('');
   const [Skills, setSkills] = useState<string>('');
   const [Criteria, setCriteria] = useState<string>('');
+  const [showAlert, setShowAlert] = useState<boolean>(false);
+  const [showErrorAlert, setShowErrorAlert] = useState<boolean>(false);
   const handleSubmitNewTodo: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     await addTodo({
@@ -23,12 +25,16 @@ const AddTask = () => {
       skills: Skills,
       criteria: Criteria,
     });
+    setShowAlert(true);
     setNewTaskValue('');
     setJobTitle('');
     setSkills('');
     setCriteria('');
     setModalOpen(false);
     router.refresh();
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 1000);
   };
   return (
     <div>
@@ -79,6 +85,26 @@ const AddTask = () => {
           </div>
         </form>
       </Modal>
+      {showAlert && (
+        <div className="fixed top-2 right-0 mb-4 mr-4">
+          <div role="alert" className="alert alert-success ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span>User Added Successfully!</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
